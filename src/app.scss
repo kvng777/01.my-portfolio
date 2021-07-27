@@ -11,7 +11,7 @@
         > *{
             width: 100vw;
             height: calc(100vh - 70px); //you need that space between the minus sign
-            scroll-snap-type: start;
+            scroll-snap-align: start;
         }
     }
 }
