@@ -24,5 +24,16 @@
             scroll-snap-align: start;
         }
     }
+
+
 }
 
+.sideMenu{
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 300px !important;
+    position: fixed;
+    right: 0;
+    z-index: 0;
+}
