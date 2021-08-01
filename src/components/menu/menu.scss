@@ -1,0 +1,32 @@
+@import '../../global.scss';
+
+.menu{
+    width: 230px;
+    height: 100vh;
+    background-color: $mainColor4;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // transition: all 1s ease;
+    transition:  0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    &.active {
+        right: 0px;
+        -webkit-box-shadow: -13px 0px 21px 4px rgba(0,0,0,0.5); 
+        box-shadow: -13px 0px 21px 4px rgba(0,0,0,0.5);
+    }
+    ul{
+        padding-left: 0px;
+        li{
+            margin: 20px 0;
+            a {
+                font-size: 30px;
+            }
+        }
+    }
+
+}
