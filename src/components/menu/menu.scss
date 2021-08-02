@@ -3,28 +3,39 @@
 .menu{
     width: 230px;
     height: 100vh;
-    background-color: $mainColor4;
+    background-color: $mainColor5;
     position: fixed;
-    top: 0;
+    top: 70px;
     right: -300px;
-    z-index: 2;
+    z-index: 3;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
     // transition: all 1s ease;
-    transition:  0.5s cubic-bezier(0.230, 1.000, 0.320, 1.000);
+    transition:  1s cubic-bezier(0.230, 1.000, 0.320, 1.000);
     &.active {
         right: 0px;
-        -webkit-box-shadow: -13px 0px 21px 4px rgba(0,0,0,0.5); 
-        box-shadow: -13px 0px 21px 4px rgba(0,0,0,0.5);
+        box-shadow: 11px 28px 10px 17px rgb(0 0 0 / 50%);
+        -webkit-box-shadow: 11px 28px 10px 17px rgb(0 0 0 / 50%);
+        -moz-box-shadow: 11px 28px 10px 17px rgb(0 0 0 / 50%);
     }
     ul{
         padding-left: 0px;
         li{
-            margin: 20px 0;
+            padding: 15px 0;
             a {
+                color: inherit;
                 font-size: 30px;
+                text-decoration: none;
+                transition: all .5s ease;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    color: white;
+                    border-bottom: 2px solid white;
+                    font-weight: 600;
+               
+                }
             }
         }
     }
