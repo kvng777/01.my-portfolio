@@ -1,28 +1,58 @@
 @import "../../global.scss";
 
 .intro{
-    position: absolute;
+    // position: absolute;
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     background-color:$mainColor4;
     
     .left{
-        width: 50vw;
-        background-color: darkred;
-        display: flex;
-        align-self:flex-end;
-        border-radius: 50%;
-
-        img{
-            position: relative;
-            top:0;
-            max-height: 50%;
-            max-width:80%;
+      flex: 0.5;
+      overflow: hidden;
+        .imgContainer{
+            width: 600px;
+            height: 600px;
+            background-color: darkred;
+            border-radius: 50%;
+            display:flex;
+            align-items: flex-end;
+            justify-content: center;
+            img{
+                height: 90%;
+            }
         }
     }
     .right{
-        background: salmon;
-        width: 50vw;
+        flex: 0.5;
+        position: relative;
+        .wrapper {
+            width: 100%;
+            height: 100%;
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            h1{
+                font-size: 60px;
+                margin: 10px;
+            }
+            h2{
+                font-size: 35px;
+            }
+            h3{
+                font-size: 30px;
+            }
+            a{
+                position: absolute;
+                bottom: 10px;
+                left: 50%;
+            }
+        }
+        img{
+            width: 50px;
+        
+        }
+
     }
 
 }
