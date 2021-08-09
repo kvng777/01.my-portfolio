@@ -1,6 +1,17 @@
 import './intro.scss';
+import { init } from 'ityped';
+import { useEffect, useRef } from 'react';
 
-export default function intro() {
+export default function Intro() {
+    const textRef = useRef();
+
+    useEffect(()=>{
+        init(textRef.current, {
+            showCursor: true,
+            strings: ["Hitman", "Lover", "Body dicapitator"],
+        });
+    },[])
+
     return (
     <div className='intro' id="intro">
    
@@ -12,11 +23,11 @@ export default function intro() {
         <div className="right">
             <div className="wrapper">
                 <h2>Hey there!</h2>
-                <h1>I'm dead</h1>
-                <h3>...pool<span>!</span></h3>
+                <h1>I'm Deadpool</h1>
+                <h3>Freelance <span ref={textRef}></span></h3>
                 <a href="">
-                <img src="images/down.png" alt="" />
-            </a>
+                    <img src="images/down.png" alt="" />
+                </a>
             </div>
 
         </div>

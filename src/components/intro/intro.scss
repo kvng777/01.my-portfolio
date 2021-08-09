@@ -1,22 +1,20 @@
 @import "../../global.scss";
 
 .intro{
-    // position: absolute;
     display: flex;
-    // flex-direction: row;
     background-color:$mainColor4;
-    
     .left{
       flex: 0.5;
       overflow: hidden;
         .imgContainer{
-            width: 600px;
-            height: 600px;
+            width: 700px;
+            height: 700px;
             background-color: darkred;
             border-radius: 50%;
             display:flex;
             align-items: flex-end;
             justify-content: center;
+            float: right;
             img{
                 height: 90%;
             }
@@ -34,13 +32,17 @@
             justify-content: center;
             h1{
                 font-size: 60px;
-                margin: 10px;
+                margin: 10px 0;
             }
             h2{
                 font-size: 35px;
             }
             h3{
                 font-size: 30px;
+                span {
+                    font-size: 45px;
+                    color: crimson;
+                }
             }
             a{
                 position: absolute;
